@@ -1,12 +1,9 @@
+from collections import defaultdict
+
 def count(filename):
     the_file = open(filename)
 
-    data = {
-        "charm": 0,
-        "spell": 0,
-        "jinx":  0,
-        "curse": 0
-    }
+    data = defaultdict(int)
 
     for line in the_file:
         split_line = line.split(',')

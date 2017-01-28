@@ -8,14 +8,11 @@ var dataset = [
 var width = 420;
 var height = 420;
 var radius = Math.min(width, height) / 2;
-var donutWidth = 75;
+var donutWidth = 69;
 var legendRectSize = 18;
 var legendSpacing = 4;
 
-var color = d3.scaleOrdinal()
-    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
-
-// var color = d3.scaleOrdinal(d3.schemeCategory20b);
+var color = d3.scaleOrdinal(d3.schemeDark2);
 
 var svg = d3.select('#chart')
   .append('svg')
